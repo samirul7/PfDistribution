@@ -1,0 +1,17 @@
+.week {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.8rem;
+  align-items: center;
+
+  border-bottom: 2px solid #170496;
+  padding-bottom: 1rem;
+}
+
+.weekList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

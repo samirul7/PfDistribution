@@ -1,0 +1,30 @@
+.rateContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(12, 70, 136);
+}
+
+.inputGroup {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.inputGroup input {
+  width: 8rem;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+.btn {
+  padding: 0 1rem;
+  text-transform: uppercase;
+  min-width: 8rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}

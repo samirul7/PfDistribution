@@ -1,0 +1,35 @@
+.inputGroup {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.5rem;
+  width: 10rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+.individualWorker {
+  /* padding: 1rem 0; */
+}
+
+.thead {
+  text-transform: uppercase;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  font-size: 1.4rem;
+  background-color: white;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid black;
+}

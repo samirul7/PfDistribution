@@ -1,0 +1,57 @@
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.rounded {
+  border-radius: 5rem;
+}
+
+.btn:disabled {
+  background-color: rgb(219, 219, 219);
+  cursor: not-allowed;
+}
+
+.hover:hover {
+  box-shadow: 0.2rem 0.4rem 0.6rem #515151;
+  border: 1px solid black;
+}
+
+/* size: sm, md, lg */
+
+.sm {
+  font-size: 1rem;
+  padding: 3px 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/* appearence */
+
+.primary {
+  background-color: rgb(43, 194, 249);
+}
+
+/* color */
+.red {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.blue {
+  color: blue;
+  background-color: white;
+  border: 1px solid blue;
+}
+
+/* padding */
+.padding_h_sm {
+  /* horizontal small */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

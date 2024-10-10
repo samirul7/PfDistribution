@@ -1,0 +1,23 @@
+.beediInput {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.label {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+.input:disabled {
+  cursor: not-allowed;
+}

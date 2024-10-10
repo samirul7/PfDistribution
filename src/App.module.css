@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right bottom, #57efe0, #280543);
+  min-height: 100vh;
+}
+
+.heading {
+  color: #d317a1;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+}
+
+.bBottom {
+  border-bottom: 2px solid #2144a2;
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.active {
+  background-color: rgb(10, 123, 143);
+  border-bottom: 1px solid #fff;
+  border-radius: 0.5rem;
+}
