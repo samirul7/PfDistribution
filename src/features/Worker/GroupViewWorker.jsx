@@ -34,6 +34,16 @@ const GroupViewWorker = ({ setEditMode }) => {
                   </tr>
                 ))}
               </tbody>
+              <tfoot>
+                <tr>
+                  <th>Total</th>
+                  <td>{week.total.pfAmount}</td>
+                  <td>{week.total.totalBeedi}</td>
+                  <td>{week.total.totalWage}</td>
+                  <td>{week.total.totalBonus}</td>
+                  <td>{week.total.total}</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
         ))}

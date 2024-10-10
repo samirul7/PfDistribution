@@ -6,6 +6,10 @@
   margin-bottom: 1rem;
 }
 
+.pfDistribution tfoot td {
+  font-weight: bold;
+}
+
 .week {
   display: flex;
   flex-direction: column;

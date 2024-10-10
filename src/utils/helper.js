@@ -48,7 +48,35 @@ export const getPfDistributionForAllUsers = (pfValues) => {
         total: Math.round((total + Number.EPSILON) * 100) / 100,
       }
     })
-    return { id: `${week.id}-${idx}0`, value }
+
+    const total = value.reduce(
+      (acc, curr) => ({
+        pfAmount: acc.pfAmount + curr.pfAmount,
+        totalBeedi: acc.totalBeedi + curr.totalBeedi,
+        totalWage: acc.totalWage + curr.totalWage,
+        totalBonus: acc.totalBonus + curr.totalBonus,
+        total: acc.total + curr.total,
+      }),
+      {
+        pfAmount: 0,
+        totalBeedi: 0,
+        totalWage: 0,
+        totalBonus: 0,
+        total: 0,
+      }
+    )
+
+    return {
+      id: `${week.id}-${idx}0`,
+      value,
+      total: {
+        pfAmount: total.pfAmount.toFixed(2),
+        totalBeedi: total.totalBeedi.toFixed(2),
+        totalWage: total.totalWage.toFixed(2),
+        totalBonus: total.totalBonus.toFixed(2),
+        total: total.total.toFixed(2),
+      },
+    }
   })
 }
 

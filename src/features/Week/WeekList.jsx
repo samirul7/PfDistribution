@@ -95,8 +95,8 @@ const WeekList = () => {
       <div className={styles.beediPfView}>
         {isLock && (
           <>
-            <p>Total Beedi: {totalBeedi}</p>
-            <p>Pf Amount: {totalPf}</p>
+            <p>Total Beedi: {totalBeedi.toFixed(2)}</p>
+            <p>Pf Amount: {totalPf.toFixed(2)}</p>
           </>
         )}
       </div>
