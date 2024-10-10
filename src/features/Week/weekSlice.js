@@ -7,6 +7,7 @@ const weekSlice = createSlice({
     weekListInput: new Array(4).fill({}).map(() => ({ id: uuid(), value: '' })),
     weekList: [],
     weekListLockStatus: false,
+    totalBeedi: 0,
   },
   reducers: {
     updateWeekList(state, action) {

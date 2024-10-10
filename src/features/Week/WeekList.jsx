@@ -15,8 +15,10 @@ import {
 const WeekList = () => {
   const isLock = useSelector((state) => state.weekList.weekListLockStatus)
   const weekList = useSelector((state) => state.weekList.weekListInput)
+  const totalBeedi = useSelector((state) => state.weekList.totalBeedi)
+  const rate = useSelector((state) => state.rate.wage)
+  const totalPf = (Number(totalBeedi) * Number(rate)) / 1000 / 10
   const [isDisabled, setIsDisabled] = useState(false)
-
   const dispatch = useDispatch()
 
   const handleAddWeek = (id) => {
@@ -90,6 +92,14 @@ const WeekList = () => {
           {isLock ? 'Unlock' : 'Lock'}
         </Button>
       )}
+      <div className={styles.beediPfView}>
+        {isLock && (
+          <>
+            <p>Total Beedi: {totalBeedi}</p>
+            <p>Pf Amount: {totalPf}</p>
+          </>
+        )}
+      </div>
     </div>
   )
 }

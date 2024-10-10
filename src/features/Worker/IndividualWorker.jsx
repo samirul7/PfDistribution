@@ -38,6 +38,7 @@ const IndividualWorker = () => {
       <div className={styles.inputGroup}>
         <label htmlFor='pfAmount'>PF amount</label>
         <input
+          type='number'
           className={styles.input}
           id='pfAmount'
           value={pfAmount}
