@@ -6,8 +6,8 @@ import { useDispatch } from 'react-redux'
 import { updateRate, updateRateLockStatus } from './rateSlice'
 
 const Rate = () => {
-  const [wage, setWage] = useState('142')
-  const [bonus, setBonus] = useState('36')
+  const [wage, setWage] = useState('160')
+  const [bonus, setBonus] = useState('42')
   const [isLock, setIsLock] = useState(true)
   const [isDisabled, setIsDisabled] = useState(false)
 
