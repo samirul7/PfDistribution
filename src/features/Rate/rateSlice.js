@@ -3,8 +3,8 @@ import { createSlice } from '@reduxjs/toolkit'
 const rateSlice = createSlice({
   name: 'rate',
   initialState: {
-    wage: '142',
-    bonus: '36',
+    wage: '160',
+    bonus: '42',
     rateLockStatus: true,
   },
   reducers: {
